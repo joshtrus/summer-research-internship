@@ -166,7 +166,7 @@ while runUserCode:
                 main_times.append(time)
                 main_summaries.append(article_summary)
                 main_full_summary.append(full_article)
-                cursor.execute(f"INSERT INTO jse_main (tickerName, newsDate, newsTime, newsSummary) VALUES ('{ticker_name}', '{date}', '{time}', '{article_summary}', '{full_article}')")
+                cursor.execute(f"INSERT INTO jse_main (tickerName, newsDate, newsTime, newsSummary, fullArticle) VALUES ('{ticker_name}', '{date}', '{time}', '{article_summary}', '{full_article}')")
                 conn.commit()
                 
             elif year < 2010:
