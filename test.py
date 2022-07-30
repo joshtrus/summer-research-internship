@@ -79,13 +79,13 @@ select_dates = []
 select_times = []
 select_summaries = []
 select_full_summary = []
-p = 2733
+p = 0
 
 #pre-setting the while loop to true
 runUserCode = True
 while runUserCode:
     #for loop which cycles through the pages of the website
-    for x in range(2734,2735):
+    for x in range(1,4000):
         browser.get(f"https://www.jamstockex.com/news/page/{x}/")
         p += 1
         #there are 10 articles on each page therfore the range is 1,11
